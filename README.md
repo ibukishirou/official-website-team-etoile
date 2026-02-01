@@ -59,27 +59,27 @@ React + Viteで構築されたシングルページアプリケーションで�
 
 ### インストール
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ### 開発サーバー起動
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ### ビルド
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ### プレビュー
 
-\`\`\`bash
+```bash
 npm run preview
-\`\`\`
+```
 
 ## 📝 実績データの編集
 
@@ -102,93 +102,7 @@ npm run preview
 }
 ```
 
-## 🚀 GitHub Pagesデプロイ
-
-### 自動デプロイ設定手順
-
-1. GitHubリポジトリの **Settings** → **Pages** に移動
-2. **Source** を **GitHub Actions** に設定
-3. mainブランチにプッシュすると自動デプロイされます
-
-### ワークフローファイルの手動追加
-
-GitHub Appの権限により、ワークフローファイル（\`.github/workflows/deploy.yml\`）は手動で追加する必要があります。
-
-#### 手順:
-
-1. GitHubのリポジトリページで **Add file** → **Create new file** をクリック
-2. ファイル名に \`.github/workflows/deploy.yml\` と入力
-3. 以下の内容をコピー＆ペースト:
-
-\`\`\`yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'
-
-  deploy:
-    environment:
-      name: github-pages
-      url: \${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-\`\`\`
-
-4. **Commit changes** をクリックしてファイルを作成
-
-これで、mainブランチへのプッシュ時に自動的にGitHub Pagesへデプロイされます。
-
 ## 🔗 公開URL
 
 デプロイ後、以下のURLでアクセスできます:
 **https://ibukishirou.github.io/official-website-team-etoile/**
-
-## 📞 お問い合わせ
-
-サイトに関するご質問は、[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdiUTiNeW6VDfhOdU4H-mpB4U-Rcbtq8vr73Ww2gW7jTjTEmw/viewform)からお願いします。
-
----
-
-© 2026 team Étoiles Inc. All Rights Reserved.
