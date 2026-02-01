@@ -44,17 +44,6 @@
       ],
       "url": "https://rakuspa.com/tamagotchi/",
       "featured": false
-    },
-    {
-      "id": "latair-the-earth",
-      "title": "地球のラテール",
-      "description": "環境をテーマにしたオリジナルコンテンツ企画。地球環境保護とエンターテインメントを融合させた新しい取り組み。",
-      "category": "オリジナルコンテンツ",
-      "images": [
-        "images/latair-the-earth.webp"
-      ],
-      "url": "https://latair.jp/",
-      "featured": false
     }
   ]
 }

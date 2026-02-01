@@ -6,7 +6,7 @@ const Company = () => {
     { label: '英文社名', value: 'team Étoiles Inc.' },
     { 
       label: '所在地', 
-      value: '〒104-0061\n東京都中央区銀座1丁目12番4号 N&E BLD.6F' 
+      value: '〒104-0061\n東京都中央区銀座1丁目12番4号 N&E BLD.6F team Étoiles Inc.' 
     },
     { label: '代表者', value: '代表取締役 佐々木裕路' },
     { label: '設立', value: '令和5年10月17日' },
