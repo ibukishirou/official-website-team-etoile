@@ -42,7 +42,7 @@
       "images": [
         "images/tamagotchi-rakuspa.webp"
       ],
-      "url": "",
+      "url": "https://rakuspa.com/tamagotchi/",
       "featured": false
     },
     {
@@ -53,7 +53,7 @@
       "images": [
         "images/latair-the-earth.webp"
       ],
-      "url": "",
+      "url": "https://latair.jp/",
       "featured": false
     }
   ]
