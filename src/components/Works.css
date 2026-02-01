@@ -1,0 +1,124 @@
+.works {
+  background: var(--color-bg);
+}
+
+.works-grid {
+  display: grid;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+  padding: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  transition: var(--transition);
+}
+
+.work-item:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+.work-item.featured {
+  border: 2px solid var(--color-accent);
+}
+
+.work-media {
+  width: 100%;
+}
+
+.work-images {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.work-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.work-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.work-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.work-info {
+  padding: var(--spacing-sm);
+}
+
+.work-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-xs);
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 20px;
+}
+
+.work-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.work-description {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.work-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.work-link:hover {
+  opacity: 0.7;
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .work-item {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm);
+  }
+
+  .work-title {
+    font-size: 1.2rem;
+  }
+
+  .work-description {
+    font-size: 0.9rem;
+  }
+}

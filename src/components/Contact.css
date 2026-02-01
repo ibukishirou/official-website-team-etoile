@@ -1,0 +1,48 @@
+.contact {
+  background: var(--color-bg);
+}
+
+.contact-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-primary);
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  background: transparent;
+  color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+}

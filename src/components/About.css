@@ -1,0 +1,41 @@
+.about {
+  background: var(--color-bg);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-lead {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.9;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.02em;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--color-text-light);
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-lead {
+    font-size: 1.1rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+
+  .about-lead br,
+  .about-text br {
+    display: none;
+  }
+}

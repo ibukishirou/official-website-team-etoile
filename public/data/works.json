@@ -1,0 +1,48 @@
+{
+  "works": [
+    {
+      "id": "highspeed-etoile",
+      "title": "HIGHSPEED Étoile（ハイスピード エトワール）",
+      "description": "目指すは、サーキットの一番星！オリジナルTVアニメーション作品として2024年4月より放送。近未来のモータースポーツを舞台に、少女たちがトップレーサーを目指す青春レーシングストーリー。",
+      "category": "アニメ制作",
+      "images": [
+        "/images/highspeed-etoile-visual.webp",
+        "/images/highspeed-etoile-photo.webp",
+        "/images/highspeed-etoile-sponsors.webp"
+      ],
+      "url": "https://highspeed-etoile.com/",
+      "featured": true
+    },
+    {
+      "id": "toyota-gazoo-racing",
+      "title": "TOYOTA GAZOO Racing × HIGHSPEED Étoile",
+      "description": "TOYOTA GAZOO Racingとのコラボレーション企画。アニメとモータースポーツの融合により、新しいファン層への訴求を実現。",
+      "category": "コラボレーション",
+      "videoUrl": "https://www.youtube.com/embed/AxJ4tBN8xQg",
+      "url": "https://youtu.be/AxJ4tBN8xQg?si=okn7m18LvJeCpPK6",
+      "featured": true
+    },
+    {
+      "id": "tamagotchi-rakuspa",
+      "title": "たまごっち × 極楽湯 RAKU SPA",
+      "description": "人気キャラクター「たまごっち」と温浴施設「極楽湯 RAKU SPA」のコラボレーション企画。キャラクターIPを活用した店舗プロモーション施策。",
+      "category": "コラボレーション",
+      "images": [
+        "/images/tamagotchi-rakuspa.webp"
+      ],
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "latair-the-earth",
+      "title": "地球のラテール",
+      "description": "環境をテーマにしたオリジナルコンテンツ企画。地球環境保護とエンターテインメントを融合させた新しい取り組み。",
+      "category": "オリジナルコンテンツ",
+      "images": [
+        "/images/latair-the-earth.webp"
+      ],
+      "url": "",
+      "featured": false
+    }
+  ]
+}
