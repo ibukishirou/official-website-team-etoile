@@ -1,11 +1,13 @@
 import './Hero.css'
 
 const Hero = () => {
+  const baseUrl = import.meta.env.BASE_URL
+  
   return (
     <section id="hero" className="hero">
       <div className="hero-content">
         <div className="hero-logo">
-          <img src="/images/logo.webp" alt="team Étoiles" />
+          <img src={`${baseUrl}images/logo.webp`} alt="team Étoiles" />
         </div>
         <h1 className="hero-title">
           アニメと企業をつなぎ<br />

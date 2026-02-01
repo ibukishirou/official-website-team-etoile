@@ -4,6 +4,7 @@ import './Navigation.css'
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const baseUrl = import.meta.env.BASE_URL
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +35,7 @@ const Navigation = () => {
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('hero')}>
-          <img src="/images/logo.webp" alt="team Étoiles" />
+          <img src={`${baseUrl}images/logo.webp`} alt="team Étoiles" />
         </div>
 
         {/* Desktop Navigation */}

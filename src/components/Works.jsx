@@ -1,6 +1,8 @@
 import './Works.css'
 
 const Works = ({ works }) => {
+  const baseUrl = import.meta.env.BASE_URL
+  
   const renderWorkItem = (work) => {
     return (
       <div key={work.id} className={`work-item ${work.featured ? 'featured' : ''}`}>
@@ -18,7 +20,7 @@ const Works = ({ works }) => {
           ) : work.images && work.images.length > 0 ? (
             <div className="work-images">
               {work.images.map((image, idx) => (
-                <img key={idx} src={image} alt={`${work.title} ${idx + 1}`} />
+                <img key={idx} src={`${baseUrl}${image}`} alt={`${work.title} ${idx + 1}`} />
               ))}
             </div>
           ) : null}

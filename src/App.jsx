@@ -11,13 +11,14 @@ import './App.css'
 
 function App() {
   const [works, setWorks] = useState([])
+  const baseUrl = import.meta.env.BASE_URL
 
   useEffect(() => {
-    fetch('/data/works.json')
+    fetch(`${baseUrl}data/works.json`)
       .then(res => res.json())
       .then(data => setWorks(data.works))
       .catch(err => console.error('Failed to load works:', err))
-  }, [])
+  }, [baseUrl])
 
   return (
     <div className="app">
