@@ -2,11 +2,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => {
-  const base = command === 'build' ? '/official-website-team-etoile/' : '/'
-  
+export default defineConfig(() => {
+  // カスタムドメイン使用時はbase='/'
   return {
     plugins: [react()],
-    base: base,
+    base: '/',
   }
 })
