@@ -1,7 +1,7 @@
 # team Étoiles 公式サイト
 
-チーム・エトワール株式会社の公式ウェブサイトです。
-公開URL: https://team-etoiles.com/
+- チーム・エトワール株式会社の公式ウェブサイトです。
+- 公開URL: https://team-etoiles.com/
 
 ## 🌟 概要
 
