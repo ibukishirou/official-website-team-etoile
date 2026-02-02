@@ -1,6 +1,7 @@
 # team Étoiles 公式サイト
 
 チーム・エトワール株式会社の公式ウェブサイトです。
+公開URL: https://team-etoiles.com/
 
 ## 🌟 概要
 
@@ -101,8 +102,3 @@ npm run preview
   ]
 }
 ```
-
-## 🔗 公開URL
-
-デプロイ後、以下のURLでアクセスできます:
-**https://ibukishirou.github.io/official-website-team-etoile/**
